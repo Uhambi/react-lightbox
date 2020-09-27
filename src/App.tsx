@@ -3,7 +3,7 @@ import styled from "styled-components"
 import useLightbox from "./hooks/useLightbox"
 import ImageList from "./components/ImageList"
 import Lightbox from "./components/Lightbox"
-import ImageSlideshow from "./components/ImageSlideshow";
+import ImageSlideshow from "./components/ImageSlideshow"
 
 const IMAGE_URLS = [
   "https://lh3.googleusercontent.com/YEcRcfKUaq3mA3vHN_VcE2G4TN8ZzvyTJnjfOXgVHjfCO3u2zKjJmK6xTdEUm6q5F8OTTcTB7EoiZ4ePpknxq8Jz",
@@ -15,7 +15,7 @@ const IMAGE_URLS = [
 
 const App = () => {
   const [isOpen, openLightbox, closeLightbox] = useLightbox(false)
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0)
 
   const openFullImage = useCallback((index: number) => {
     setActiveIndex(index)
